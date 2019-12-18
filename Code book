@@ -10,3 +10,9 @@ inline void R_P(vector<int> &vec){
 	cin>>temp;
 	vec.push_back(temp);
 } 
+inline bool checkMax(int &base,int test){
+	return (test>base)?base=test,true:false;
+}
+inline bool checkMin(int &base,int test){
+	return (test<base)?base=test,true:false;
+}
