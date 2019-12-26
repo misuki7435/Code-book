@@ -12,6 +12,14 @@ inline void R_P(vector<int> &vec){
 	cin>>temp;
 	vec.push_back(temp);
 } 
+inline void R_PwithVal(vector<int> &vec){
+	int size;R(size);
+	int temp;
+	_for(i,0,size){
+		R(temp);
+		vec.PB(temp);
+	}
+}
 inline bool checkMax(int &base,int test){
 	return (test>base)?base=test,true:false;
 }
