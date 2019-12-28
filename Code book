@@ -5,6 +5,7 @@
 #define PB push_back
 #define MIN -2147483647
 #define MAX 2147483647
+#define Miku_My_Wife
 
 using namespace std;
 inline void R_P(vector<int> &vec){
