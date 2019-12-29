@@ -5,6 +5,9 @@
 #define PB push_back
 #define MIN -2147483647
 #define MAX 2147483647
+#define VI vector<int>
+#define VB vector<bool>
+#define S size()
 #define Miku_My_Wife
 
 using namespace std;
@@ -18,6 +21,13 @@ inline bool checkMax(int &base,int test){
 }
 inline bool checkMin(int &base,int test){
 	return (test<base)?base=test,true:false;
+}
+template <class T>
+void test(vector<T> &vec,const string &warn){
+	cout<<warn<<'\n';
+	_for(i,0,vec.size())
+		cout<<vec[i]<<' ';
+	cout<<"\nTest end..............\n";
 }
 
 using namespace std;
