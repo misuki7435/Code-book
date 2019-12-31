@@ -8,6 +8,7 @@
 #define VI vector<int>
 #define VB vector<bool>
 #define S size()
+#define ALL(X) X.begin(),X.end()
 #define Miku_My_Wife
 
 using namespace std;
