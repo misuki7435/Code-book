@@ -1,16 +1,17 @@
 #include<bits/stdc++.h>
 #define _for(i,a,b) for(int i=(a);i<(b);i++)
-#define R(X) cin>>X
-#define _vec(X) vec.at(X)
 #define PB push_back
-#define MIN -2147483647
-#define MAX 2147483647
+#define MINI -2147483647
+#define MAXI 2147483647
+#define MAXLL 9223372036854775807
+#define MINLL -9223372036854775807
 #define VI vector<int>
 #define VB vector<bool>
+#define VLL vector<long long>
 #define S size()
-#define ALL(X) X.begin(),X.end()
-#define Miku_My_Wife
-
+#define ALL(X) X.begin(),X.end() 
+//#define Miku_My_Wife
+ 
 using namespace std;
 inline void R_P(vector<int> &vec){
 	int temp;
@@ -20,7 +21,8 @@ inline void R_P(vector<int> &vec){
 inline bool checkMax(int &base,int test){
 	return (test>base)?base=test,true:false;
 }
-inline bool checkMin(int &base,int test){
+template <class T>
+inline bool checkMin(T &base,T test){
 	return (test<base)?base=test,true:false;
 }
 template <class T>
@@ -29,12 +31,4 @@ void test(vector<T> &vec,const string &warn){
 	_for(i,0,vec.size())
 		cout<<vec[i]<<' ';
 	cout<<"\nTest end..............\n";
-}
-
-using namespace std;
-int main(){
-	#ifndef Miku_My_Wife
-	freopen("input.txt","r",stdin);
-	freopen("output.txt","w",stdout);
-	#endif
 }
