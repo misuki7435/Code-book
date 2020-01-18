@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
-#define _for(i,a,b) for(int i=(a);i<(b);i++)
-#define PB push_back
+#define _for(i, a, b) for (int i = (a); i < (b); i++)
+#define PB emplace_back
 #define MINI -2147483647
 #define MAXI 2147483647
 #define MAXLL 9223372036854775807
@@ -8,27 +8,39 @@
 #define VI vector<int>
 #define VB vector<bool>
 #define VLL vector<long long>
+#define LL long long
 #define S size()
-#define ALL(X) X.begin(),X.end() 
+#define ALL(X) X.begin(), X.end() 
 //#define Miku_My_Wife
  
 using namespace std;
-inline void R_P(vector<int> &vec){
-	int temp;
-	cin>>temp;
-	vec.push_back(temp);
+inline void R_P(vector<int> &vec) {
+  int temp;
+  cin>>temp;
+  vec.push_back(temp);
 } 
-inline bool checkMax(int &base,int test){
-	return (test>base)?base=test,true:false;
+inline bool checkMax(int &base, int test) {
+  return (test > base) ? base = test, true : false;
 }
 template <class T>
-inline bool checkMin(T &base,T test){
-	return (test<base)?base=test,true:false;
+inline bool checkMin(T &base, T test){
+  return (test < base)? base = test, true : false;
 }
 template <class T>
-void test(vector<T> &vec,const string &warn){
-	cout<<warn<<'\n';
-	_for(i,0,vec.size())
-		cout<<vec[i]<<' ';
-	cout<<"\nTest end..............\n";
+void test(vector<T> &vec, const string &warn) {
+  cout<<warn<<'\n';
+  _for(i, 0, vec.size())
+    cout<<vec[i]<<' ';
+  cout<<"\nTest end..............\n";
+}
+
+int main () {
+  #ifdef Miku_My_Wife
+  freopen("input.txt", "r", stdin);
+  freopen("output.txt", "w", stdout);
+  #endif
+
+
+
+  return 0;
 }
