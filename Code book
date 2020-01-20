@@ -33,6 +33,16 @@ void test(vector<T> &vec, const string &warn) {
     cout<<vec[i]<<' ';
   cout<<"\nTest end..............\n";
 }
+template<class T>
+void test2d(vector<vector<T> > &vec, const string &warn) {
+  cout<<warn<<'\n';
+  _for(row, 0, vec.S) {
+    _for(col, 0, vec[row].S)
+      cout<<vec[row][col]<<' ';
+    cout<<'\n';
+  }
+  cout<<"\nTest end..............\n";
+}
 
 int main () {
   #ifdef Miku_My_Wife
